@@ -1,7 +1,7 @@
-[date_time]
-command=date '+%Y-%m-%d %H:%M'
-interval=5
-color=#00FFFF
+[xkb_layout]
+command=xkb-switch
+interval=1
+color=#FFFFFF
 
 [i3-msg restart]
 command=i3-msg restart
@@ -13,7 +13,9 @@ command=dm-tool lock
 full_text=Lock
 color=#7FFFD4
 
-[xkb_layout]
-command=xkb-switch
-interval=1
-color=#FFFFFF
+[date_time]
+command=date '+%Y-%m-%d %H:%M'
+interval=5
+color=#00FFFF
+
+

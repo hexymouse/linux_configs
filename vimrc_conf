@@ -1,4 +1,24 @@
+""" common
 syntax on
-set number
-set relativenumber
 set nobackup
+set nowrap
+""" line numbers
+set number
+"set relativenumber
+set cursorline
+""" tabs and spaces
+set tabstop=4
+set expandtab
+set list
+set listchars=space:·,tab:>-
+"""search
+set incsearch
+set ignorecase
+set showcmd
+set showmode
+set showmatch
+set hlsearch
+set history=1000
+set wildmenu
+""" colors
+colorscheme habamax
