@@ -25,6 +25,7 @@ set wildmenu
 """ colors
 colorscheme habamax
 """ statusline
+set laststatus=2
 set statusline=%f
 set statusline+=%=
 set statusline+=%{StatuslineMode()}
