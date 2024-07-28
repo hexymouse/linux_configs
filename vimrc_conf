@@ -2,6 +2,8 @@
 syntax on
 set nobackup
 set nowrap
+set ai
+set clipboard=unnamed
 """ line numbers
 set number
 "set relativenumber
@@ -22,3 +24,30 @@ set history=1000
 set wildmenu
 """ colors
 colorscheme habamax
+""" statusline
+set statusline=%f
+set statusline+=%=
+set statusline+=%{StatuslineMode()}
+
+"""func
+function! StatuslineMode()
+  let l:mode=mode()
+  if l:mode==#"n"
+    return "NORMAL"
+  elseif l:mode==?"v"
+    return "VISUAL"
+  elseif l:mode==#"i"
+    return "INSERT"
+  elseif l:mode==#"R"
+    return "REPLACE"
+  elseif l:mode==?"s"
+    return "SELECT"
+  elseif l:mode==#"t"
+    return "TERMINAL"
+  elseif l:mode==#"c"
+    return "COMMAND"
+  elseif l:mode==#"!"
+    return "SHELL"
+  endif
+endfunction
+
