@@ -2,7 +2,8 @@
 syntax on
 set nobackup
 set nowrap
-set ai
+set ai "auto indent
+set ar "autoread
 set clipboard=unnamed
 """ line numbers
 set number
